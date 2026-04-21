@@ -76,6 +76,13 @@ class NoteDetail(Resource):
 
         return note, None
 
+    def get(self, note_id):
+        # return a single note by id
+        note, error = self._get_my_note(note_id)
+        if error:
+            return error
+        return note.to_dict(), 200
+
     def patch(self, note_id):
         note, error = self._get_my_note(note_id)
         if error:

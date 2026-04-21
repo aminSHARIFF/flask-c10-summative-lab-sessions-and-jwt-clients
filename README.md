@@ -60,6 +60,7 @@ App runs on http://localhost:5555
 | POST | /notes | Create a new note |
 | PATCH | /notes/<id> | Update a note |
 | DELETE | /notes/<id> | Delete a note |
+| GET | /notes/<id> | Get a single note |
 
 ## Tech used
 - Python 3.8
